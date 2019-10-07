@@ -1,27 +1,27 @@
 const mongoose = require('mongoose');
-const Loc = mongoose.model('Locations');
+const Loc = mongoose.model('Location');
 
-const locationsListByDistance = (res,req) =>{ 
+const locationsListByDistance = (req,res) =>{ 
     res
     .status(200)
     .json({"status":"success"});
  };
-const locationsCreate =(res,req) => { 
+const locationsCreate = (req, res) => { 
     res
     .status(200)
     .json({"status":"success"});
  };
-const locationsReadOne = (res, req) => { 
+const locationsReadOne = (req, res) => { 
     res
     .status(200)
     .json({"status":"success"});
  };
-const locationsUpdateOne = (res, req) => { 
+const locationsUpdateOne = (req, res) => { 
     res
     .status(200)
     .json({"status":"success"});
  };
-const locationsDeleteOne = (res, req) => { 
+const locationsDeleteOne = (req, res) => { 
     res
     .status(200)
     .json({"status":"success"});

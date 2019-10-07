@@ -3,17 +3,17 @@ const reviewsReadOne  = (res,req) =>{
         .status(200)
         .json({"status": "success"});
 };
-const reviewsUpdateOne  = (res,req) =>{
+const reviewsUpdateOne = (req, res) =>{
     res
         .status(200)
         .json({"status": "success"});
 };
-const reviewsDeleteOne  = (res,req) =>{
+const reviewsDeleteOne = (req, res) =>{
     res
         .status(200)
         .json({"status": "success"});
 };
-const reviewsCreate  = (res,req) =>{
+const reviewsCreate = (req, res)=>{
     res
         .status(200)
         .json({"status": "success"});
