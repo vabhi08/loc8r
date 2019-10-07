@@ -12,9 +12,23 @@ const locationsCreate = (req, res) => {
     .json({"status":"success"});
  };
 const locationsReadOne = (req, res) => { 
-    res
-    .status(200)
-    .json({"status":"success"});
+   Loc
+   .findById(req.params.locationid)
+   .exec((err , location) => {
+       if(!location){
+           return res
+                    .status(404)
+                    .json({"satus": "location not found"});
+       } else if(err)
+       {
+           return res
+                    .status(404)
+                    .json(err);
+       }
+        res
+            .status(200)
+            .json(location);
+   });
  };
 const locationsUpdateOne = (req, res) => { 
     res
